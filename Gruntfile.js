@@ -44,6 +44,21 @@ module.exports = function(grunt) {
 			}
 		},
 
+		// Copy libs to public
+		copy: {
+			js: {
+				expand: true,
+				cwd: './node_modules',
+				dest: './public/js/vendor/',
+				flatten: true,
+				filter: 'isFile',
+				src: [
+					'./jquery/dist/jquery.min.js',
+					'./mustache/mustache.min.js'
+				]
+			}
+		},
+
 		// nodemon let me start the server with grunt, and reload it with every change.
 		nodemon: {
 			dev: {
@@ -61,6 +76,7 @@ module.exports = function(grunt) {
 
 	});
 
+	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-less');
@@ -69,6 +85,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-nodemon');
 	grunt.loadNpmTasks('grunt-concurrent');
 
-	grunt.registerTask('default', ['less', 'cssmin', 'jshint', 'uglify', 'concurrent']);
+	grunt.registerTask('default', ['copy', 'less', 'cssmin', 'jshint', 'uglify', 'concurrent']);
 
 };
