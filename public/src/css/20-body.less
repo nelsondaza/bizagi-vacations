@@ -1,0 +1,27 @@
+body {
+
+	padding-top: @header-height;
+	background-color: #f1f1f1;
+	font-family: @font-primary;
+
+	.body-content {
+		width: 98%;
+		max-width: 1200px;
+		margin: 0 auto;
+
+		@media only screen and (max-width : @responsive-w-800) {
+			width: 100%;
+		}
+	}
+
+	@media only screen and (max-width : @responsive-w-800) {
+		padding-top: ( @header-mobile-height * 2 );
+	}
+
+	&.not-front {
+		@media only screen and (max-width : @responsive-w-800) {
+			padding-top: @header-mobile-height;
+		}
+	}
+}
+
