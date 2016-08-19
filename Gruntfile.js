@@ -32,18 +32,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		// Watch files for changes process them
-		watch: {
-			css: {
-				files: ['public/src/css/00-main.less'],
-				tasks: ['less', 'cssmin']
-			},
-			js: {
-				files: ['public/src/js/**/*.js', 'public/src/js/*.js'],
-				tasks: ['jshint', 'uglify']
-			}
-		},
-
 		// Copy libs to public
 		copy: {
 			js: {
@@ -56,6 +44,46 @@ module.exports = function(grunt) {
 					'./jquery/dist/jquery.min.js',
 					'./mustache/mustache.min.js'
 				]
+			}
+		},
+
+		nightwatch: {
+			options: {
+				src_folders: './tests/',
+				output_folder: './tests/reports/',
+				selenium: {
+					start_process: true,
+					server_path: './node_modules/selenium-standalone/.selenium/2.39.0/server.jar',
+					cli_args: {
+						'webdriver.chrome.driver': './node_modules/selenium-standalone/.selenium/2.39.0/chromedriver'
+					}
+				},
+				test_settings: {
+					default: {
+						desiredCapabilities: {
+							browserName: 'phantomjs',
+							'phantomjs.binary.path': './node_modules/phantomjs/lib/phantom/bin/phantomjs'
+//							'phantomjs.binary.path': './node_modules/phantomjs/lib/phantom/phantomjs.exe'
+						}
+					}
+				},
+				chrome: {
+					desiredCapabilities: {
+						browserName: 'chrome'
+					}
+				}
+			}
+		},
+
+		// Watch files for changes process them
+		watch: {
+			css: {
+				files: ['public/src/css/00-main.less'],
+				tasks: ['less', 'cssmin']
+			},
+			js: {
+				files: ['public/src/js/**/*.js', 'public/src/js/*.js'],
+				tasks: ['jshint', 'uglify', 'nightwatch']
 			}
 		},
 
@@ -84,6 +112,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-nodemon');
 	grunt.loadNpmTasks('grunt-concurrent');
+	grunt.loadNpmTasks('grunt-nightwatch');
 
 	grunt.registerTask('default', ['copy', 'less', 'cssmin', 'jshint', 'uglify', 'concurrent']);
 
