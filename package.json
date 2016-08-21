@@ -31,7 +31,10 @@
     "grunt-nightwatch": "^0.5.3",
     "grunt-nodemon": "^0.4.2",
     "jquery": "^3.1.0",
+    "jquery-mockjax": "^2.2.0",
     "mustache": "^2.2.1",
-    "phantomjs": "^2.1.7"
+    "nightwatch": "^0.9.7",
+    "phantomjs": "^2.1.7",
+    "selenium-server-standalone-jar": "^2.53.1"
   }
 }

@@ -42,7 +42,8 @@ module.exports = function(grunt) {
 				filter: 'isFile',
 				src: [
 					'./jquery/dist/jquery.min.js',
-					'./mustache/mustache.min.js'
+					'./mustache/mustache.min.js',
+					'./jquery-mockjax/dist/jquery.mockjax.min.js'
 				]
 			}
 		},
@@ -53,23 +54,18 @@ module.exports = function(grunt) {
 				output_folder: './tests/reports/',
 				selenium: {
 					start_process: true,
-					server_path: './node_modules/selenium-standalone/.selenium/2.39.0/server.jar',
-					cli_args: {
-						'webdriver.chrome.driver': './node_modules/selenium-standalone/.selenium/2.39.0/chromedriver'
-					}
+					server_path: './node_modules/selenium-server-standalone-jar/jar/selenium-server-standalone-2.53.1.jar',
 				},
 				test_settings: {
 					default: {
 						desiredCapabilities: {
 							browserName: 'phantomjs',
-							'phantomjs.binary.path': './node_modules/phantomjs/lib/phantom/bin/phantomjs'
+							javascriptEnabled : true,
+							acceptSslCerts : true,
+							'phantomjs.binary.path': './node_modules/phantomjs/lib/phantom/bin/phantomjs',
 //							'phantomjs.binary.path': './node_modules/phantomjs/lib/phantom/phantomjs.exe'
+							"phantomjs.cli.args" : []
 						}
-					}
-				},
-				chrome: {
-					desiredCapabilities: {
-						browserName: 'chrome'
 					}
 				}
 			}
@@ -78,11 +74,11 @@ module.exports = function(grunt) {
 		// Watch files for changes process them
 		watch: {
 			css: {
-				files: ['public/src/css/00-main.less'],
+				files: ['public/src/css/*.less'],
 				tasks: ['less', 'cssmin']
 			},
 			js: {
-				files: ['public/src/js/**/*.js', 'public/src/js/*.js'],
+				files: ['public/src/js/**/*.js','public/src/js/**/*.js', 'tests/*.js'],
 				tasks: ['jshint', 'uglify', 'nightwatch']
 			}
 		},
@@ -99,7 +95,7 @@ module.exports = function(grunt) {
 			options: {
 				logConcurrentOutput: true
 			},
-			tasks: ['nodemon', 'watch']
+			tasks: ['nodemon', 'watch', 'nightwatch']
 		}
 
 	});
@@ -115,5 +111,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-nightwatch');
 
 	grunt.registerTask('default', ['copy', 'less', 'cssmin', 'jshint', 'uglify', 'concurrent']);
+	grunt.registerTask('server', ['nodemon']);
+	grunt.registerTask('tests', ['copy', 'less', 'cssmin', 'jshint', 'uglify', 'nightwatch', 'watch']);
 
 };
