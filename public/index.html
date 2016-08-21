@@ -9,13 +9,135 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
+	<!--[if lt IE 8]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
 
+	<header>
+		<div id="hmenu" class="hmenu">
+			<a href="#">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+		</div>
+		<h1>Bizagi - Vacations</h1>
+	</header>
+	<div class="body-content">
+		<aside class="body-aside">
+			<menu>
+				<ul class="menu">
+					<li class="title">ACCOUNT</li>
+					<li><a href="#account"><img class="avatar" alt="NAME" src="https://s3.amazonaws.com/uifaces/faces/twitter/garand/128.jpg">NAME</a></li>
+					<li class="title">ACTIVITIES</li>
+					<li><a href="#pending">Pending</a></li>
+					<li><a href="#approved">Approved</a></li>
+					<li><a href="#denied">Denied</a></li>
+					<li><a href="#all">All</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+			</menu>
+		</aside>
+		<section class="body-section">
+			<div class="activity-list">
+				<div class="activity">
+					<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+					<h3>{{process}} - {{activity}}</h3>
+					<p>{{activityId}}</p>
+					<div class="footer">{{status}}</div>
+				</div>
+				<div class="activity">
+					<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+					<h3>{{process}} - {{activity}}</h3>
+					<p>{{activityId}}</p>
+					<div class="footer">{{status}}</div>
+				</div>
+				<div class="activity pending">
+					<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+					<h3>{{process}} - {{activity}}</h3>
+					<p>{{activityId}}</p>
+					<div class="footer">{{status}}</div>
+				</div>
+				<div class="activity denied">
+					<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+					<h3>{{process}} - {{activity}}</h3>
+					<p>{{activityId}}</p>
+					<div class="footer">{{status}}</div>
+				</div>
+				<div class="activity approved">
+					<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+					<h3>{{process}} - {{activity}}</h3>
+					<p>{{activityId}}</p>
+					<div class="footer">{{status}}</div>
+				</div>
+				<div class="activity">
+					<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+					<h3>{{process}} - {{activity}}</h3>
+					<p>{{activityId}}</p>
+					<div class="footer">{{status}}</div>
+				</div>
+				<div class="activity">
+					<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+					<h3>{{process}} - {{activity}}</h3>
+					<p>{{activityId}}</p>
+					<div class="footer">{{status}}</div>
+				</div>
+				<div class="activity pending">
+					<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+					<h3>{{process}} - {{activity}}</h3>
+					<p>{{activityId}}</p>
+					<div class="footer">{{status}}</div>
+				</div>
+				<div class="activity denied">
+					<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+					<h3>{{process}} - {{activity}}</h3>
+					<p>{{activityId}}</p>
+					<div class="footer">{{status}}</div>
+				</div>
+				<div class="activity approved">
+					<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+					<h3>{{process}} - {{activity}}</h3>
+					<p>{{activityId}}</p>
+					<div class="footer">{{status}}</div>
+				</div>
+				<div class="activity">
+					<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+					<h3>{{process}} - {{activity}}</h3>
+					<p>{{activityId}}</p>
+					<div class="footer">{{status}}</div>
+				</div>
+				<div class="activity">
+					<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+					<h3>{{process}} - {{activity}}</h3>
+					<p>{{activityId}}</p>
+					<div class="footer">{{status}}</div>
+				</div>
+				<div class="activity pending">
+					<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+					<h3>{{process}} - {{activity}}</h3>
+					<p>{{activityId}}</p>
+					<div class="footer">{{status}}</div>
+				</div>
+				<div class="activity denied">
+					<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+					<h3>{{process}} - {{activity}}</h3>
+					<p>{{activityId}}</p>
+					<div class="footer">{{status}}</div>
+				</div>
+				<div class="activity approved">
+					<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+					<h3>{{process}} - {{activity}}</h3>
+					<p>{{activityId}}</p>
+					<div class="footer">{{status}}</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer></footer>
 
-<script src="js/vendor/jquery.min.js"></script>
-<script src="js/vendor/mustache.min.js"></script>
-<script src="js/app.min.js"></script>
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/jquery.mockjax.min.js"></script>
+	<script src="js/vendor/mustache.min.js"></script>
+	<script src="js/app.min.js"></script>
 </body>
 </html>

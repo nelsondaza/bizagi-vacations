@@ -1,0 +1,90 @@
+section.body-section {
+	display: table-cell;
+	vertical-align: top;
+	width: auto;
+	height: 100%;
+
+	.activity-list {
+		.activity {
+			padding: 10px 15px;
+			margin: 8px;
+			.border-radius(5px);
+			.box-color(#b7b7b6, true);
+
+			height: 107px;
+			background-color: #FFF;
+			float: left;
+			width: 30%;
+			min-width: 300px;
+
+			.header {
+				color: #C4C4C4;
+				font-size: 10px;
+				font-family: @font-secondary;
+				text-align: right;
+				height: 16px;
+				line-height: 16px;
+				overflow: hidden;
+				border-bottom: 1px solid #DDD;
+
+				span.case {
+					float: left;
+				}
+			}
+
+			h3 {
+				margin: 0;
+				padding: 0;
+				color: #444444;
+				font-size: 16px;
+				height: 30px;
+				line-height: 30px;
+				overflow: hidden;
+			}
+			p {
+				margin: 0;
+				padding: 3px 5px;
+				font-size: 12px;
+				height: 25px;
+				overflow: hidden;
+			}
+
+			.footer {
+				color: #C4C4C4;
+				font-size: 8px;
+				font-family: @font-secondary;
+				text-align: right;
+				height: 16px;
+				line-height: 16px;
+				overflow: hidden;
+				border-top: 1px dotted #C4C4C4;
+			}
+
+			&.pending {
+				border-left: 4px solid @input-color-wait;
+				.footer {
+					color: @input-color-wait;
+					border-top-color: @input-color-wait;
+				}
+			}
+			&.denied {
+				border-left: 4px solid @input-color-error;
+				.footer {
+					color: @input-color-error;
+					border-top-color: @input-color-error;
+				}
+			}
+			&.approved {
+				border-left: 4px solid @input-color-ok;
+				.footer {
+					color: @input-color-ok;
+					border-top-color: @input-color-ok;
+				}
+			}
+		}
+	}
+
+	.activity-details {
+
+	}
+}

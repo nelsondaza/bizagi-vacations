@@ -1,0 +1,802 @@
+[
+	{
+		"caseId": 100,
+		"employee": "Kyra U. Gilmore",
+		"beginDate": "11/07/2015",
+		"endDate": "09/01/2016",
+		"lastVacationOn": "07/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 101,
+		"employee": "Arthur O. Evans",
+		"beginDate": "09/06/2015",
+		"endDate": "21/12/2015",
+		"lastVacationOn": "31/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 102,
+		"employee": "Kathleen E. Daniel",
+		"beginDate": "04/07/2015",
+		"endDate": "09/09/2015",
+		"lastVacationOn": "07/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 103,
+		"employee": "Hadley D. Turner",
+		"beginDate": "08/06/2015",
+		"endDate": "07/01/2016",
+		"lastVacationOn": "18/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 104,
+		"employee": "Adrian Dorsey",
+		"beginDate": "02/06/2015",
+		"endDate": "09/10/2015",
+		"lastVacationOn": "23/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 105,
+		"employee": "Oren L. Nelson",
+		"beginDate": "07/07/2015",
+		"endDate": "10/08/2015",
+		"lastVacationOn": "05/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 106,
+		"employee": "Elmo Mcfarland",
+		"beginDate": "08/06/2015",
+		"endDate": "25/10/2015",
+		"lastVacationOn": "18/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 107,
+		"employee": "Joan Compton",
+		"beginDate": "24/06/2015",
+		"endDate": "26/08/2015",
+		"lastVacationOn": "14/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 108,
+		"employee": "Vaughan Gordon",
+		"beginDate": "04/06/2015",
+		"endDate": "16/12/2015",
+		"lastVacationOn": "20/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 109,
+		"employee": "Macaulay Le",
+		"beginDate": "27/06/2015",
+		"endDate": "31/08/2015",
+		"lastVacationOn": "05/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 110,
+		"employee": "Hedwig D. Haley",
+		"beginDate": "13/07/2015",
+		"endDate": "04/08/2015",
+		"lastVacationOn": "21/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 111,
+		"employee": "Nomlanga Randall",
+		"beginDate": "18/06/2015",
+		"endDate": "19/09/2015",
+		"lastVacationOn": "31/05/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 112,
+		"employee": "Zachery Henry",
+		"beginDate": "07/06/2015",
+		"endDate": "04/12/2015",
+		"lastVacationOn": "20/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 113,
+		"employee": "Zenia Carver",
+		"beginDate": "30/06/2015",
+		"endDate": "30/09/2015",
+		"lastVacationOn": "24/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 114,
+		"employee": "Kimberly Potts",
+		"beginDate": "26/06/2015",
+		"endDate": "30/08/2015",
+		"lastVacationOn": "05/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 115,
+		"employee": "Basil Cote",
+		"beginDate": "04/07/2015",
+		"endDate": "14/08/2015",
+		"lastVacationOn": "13/02/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 116,
+		"employee": "Simon Davenport",
+		"beginDate": "23/06/2015",
+		"endDate": "26/01/2016",
+		"lastVacationOn": "12/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 117,
+		"employee": "Hyacinth A. Foster",
+		"beginDate": "03/06/2015",
+		"endDate": "22/10/2015",
+		"lastVacationOn": "26/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 118,
+		"employee": "Nolan Odom",
+		"beginDate": "07/06/2015",
+		"endDate": "02/08/2015",
+		"lastVacationOn": "01/05/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 119,
+		"employee": "Abra French",
+		"beginDate": "25/06/2015",
+		"endDate": "02/12/2015",
+		"lastVacationOn": "03/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 120,
+		"employee": "Alana V. Smith",
+		"beginDate": "20/06/2015",
+		"endDate": "29/12/2015",
+		"lastVacationOn": "10/05/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 121,
+		"employee": "Indira Chase",
+		"beginDate": "05/07/2015",
+		"endDate": "19/09/2015",
+		"lastVacationOn": "05/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 122,
+		"employee": "Uta Barton",
+		"beginDate": "19/06/2015",
+		"endDate": "18/01/2016",
+		"lastVacationOn": "04/02/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 123,
+		"employee": "Kiara A. Levy",
+		"beginDate": "09/06/2015",
+		"endDate": "27/10/2015",
+		"lastVacationOn": "03/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 124,
+		"employee": "Amir C. Padilla",
+		"beginDate": "29/06/2015",
+		"endDate": "17/08/2015",
+		"lastVacationOn": "04/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 125,
+		"employee": "Ira Sears",
+		"beginDate": "09/06/2015",
+		"endDate": "19/10/2015",
+		"lastVacationOn": "28/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 126,
+		"employee": "Hu Elliott",
+		"beginDate": "17/06/2015",
+		"endDate": "01/10/2015",
+		"lastVacationOn": "17/05/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 127,
+		"employee": "Kaden X. Waters",
+		"beginDate": "05/07/2015",
+		"endDate": "03/09/2015",
+		"lastVacationOn": "09/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 128,
+		"employee": "Carla Kelly",
+		"beginDate": "28/06/2015",
+		"endDate": "06/09/2015",
+		"lastVacationOn": "08/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 129,
+		"employee": "Eve Pollard",
+		"beginDate": "08/06/2015",
+		"endDate": "30/01/2016",
+		"lastVacationOn": "16/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 130,
+		"employee": "Rooney Tucker",
+		"beginDate": "21/06/2015",
+		"endDate": "17/08/2015",
+		"lastVacationOn": "05/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 131,
+		"employee": "Coby Winters",
+		"beginDate": "15/06/2015",
+		"endDate": "08/09/2015",
+		"lastVacationOn": "22/02/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 132,
+		"employee": "Cathleen Marsh",
+		"beginDate": "04/06/2015",
+		"endDate": "06/09/2015",
+		"lastVacationOn": "12/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 133,
+		"employee": "Kasper A. Schultz",
+		"beginDate": "01/07/2015",
+		"endDate": "24/10/2015",
+		"lastVacationOn": "25/05/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 134,
+		"employee": "Justina X. Meyers",
+		"beginDate": "09/06/2015",
+		"endDate": "01/09/2015",
+		"lastVacationOn": "23/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 135,
+		"employee": "Ann Fisher",
+		"beginDate": "12/06/2015",
+		"endDate": "16/09/2015",
+		"lastVacationOn": "01/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 136,
+		"employee": "Urielle Gentry",
+		"beginDate": "06/06/2015",
+		"endDate": "26/01/2016",
+		"lastVacationOn": "19/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 137,
+		"employee": "Shea U. Benton",
+		"beginDate": "15/06/2015",
+		"endDate": "17/12/2015",
+		"lastVacationOn": "03/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 138,
+		"employee": "Quon Witt",
+		"beginDate": "16/06/2015",
+		"endDate": "17/01/2016",
+		"lastVacationOn": "22/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 139,
+		"employee": "Adrian Y. Peck",
+		"beginDate": "08/07/2015",
+		"endDate": "07/01/2016",
+		"lastVacationOn": "16/05/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 140,
+		"employee": "Eric Luna",
+		"beginDate": "23/06/2015",
+		"endDate": "08/12/2015",
+		"lastVacationOn": "15/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 141,
+		"employee": "Grant Cook",
+		"beginDate": "04/07/2015",
+		"endDate": "14/11/2015",
+		"lastVacationOn": "23/02/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 142,
+		"employee": "Dante R. Harmon",
+		"beginDate": "19/06/2015",
+		"endDate": "13/09/2015",
+		"lastVacationOn": "19/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 143,
+		"employee": "Benjamin Hale",
+		"beginDate": "26/06/2015",
+		"endDate": "05/11/2015",
+		"lastVacationOn": "29/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 144,
+		"employee": "Trevor K. Bean",
+		"beginDate": "25/06/2015",
+		"endDate": "08/08/2015",
+		"lastVacationOn": "17/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 145,
+		"employee": "Gray J. Sanders",
+		"beginDate": "06/06/2015",
+		"endDate": "10/12/2015",
+		"lastVacationOn": "29/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 146,
+		"employee": "Dillon H. Conrad",
+		"beginDate": "14/07/2015",
+		"endDate": "02/08/2015",
+		"lastVacationOn": "04/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 147,
+		"employee": "Reagan O. Wells",
+		"beginDate": "27/06/2015",
+		"endDate": "17/01/2016",
+		"lastVacationOn": "21/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 148,
+		"employee": "Simone L. Shaw",
+		"beginDate": "20/06/2015",
+		"endDate": "03/11/2015",
+		"lastVacationOn": "14/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 149,
+		"employee": "Kieran Gray",
+		"beginDate": "23/06/2015",
+		"endDate": "22/11/2015",
+		"lastVacationOn": "01/05/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 150,
+		"employee": "Randall Everett",
+		"beginDate": "08/07/2015",
+		"endDate": "28/09/2015",
+		"lastVacationOn": "07/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 151,
+		"employee": "Felicia F. Wiley",
+		"beginDate": "12/07/2015",
+		"endDate": "06/12/2015",
+		"lastVacationOn": "21/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 152,
+		"employee": "Autumn M. Franks",
+		"beginDate": "16/06/2015",
+		"endDate": "17/11/2015",
+		"lastVacationOn": "20/05/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 153,
+		"employee": "Buckminster Schultz",
+		"beginDate": "18/06/2015",
+		"endDate": "01/09/2015",
+		"lastVacationOn": "07/05/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 154,
+		"employee": "Hollee Santana",
+		"beginDate": "20/06/2015",
+		"endDate": "05/12/2015",
+		"lastVacationOn": "28/02/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 155,
+		"employee": "Rhona Z. Rogers",
+		"beginDate": "02/07/2015",
+		"endDate": "23/09/2015",
+		"lastVacationOn": "18/05/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 156,
+		"employee": "Darius V. Reynolds",
+		"beginDate": "07/06/2015",
+		"endDate": "23/01/2016",
+		"lastVacationOn": "23/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 157,
+		"employee": "Wanda R. Mccarthy",
+		"beginDate": "12/07/2015",
+		"endDate": "10/10/2015",
+		"lastVacationOn": "06/05/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 158,
+		"employee": "Mari Simpson",
+		"beginDate": "04/07/2015",
+		"endDate": "03/01/2016",
+		"lastVacationOn": "01/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 159,
+		"employee": "Latifah G. Mays",
+		"beginDate": "08/07/2015",
+		"endDate": "10/11/2015",
+		"lastVacationOn": "23/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 160,
+		"employee": "Rowan Rodriquez",
+		"beginDate": "15/06/2015",
+		"endDate": "05/11/2015",
+		"lastVacationOn": "28/02/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 161,
+		"employee": "Doris E. Colon",
+		"beginDate": "24/06/2015",
+		"endDate": "30/10/2015",
+		"lastVacationOn": "02/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 162,
+		"employee": "Jordan Huber",
+		"beginDate": "01/07/2015",
+		"endDate": "29/11/2015",
+		"lastVacationOn": "06/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 163,
+		"employee": "Brynne Q. Meyers",
+		"beginDate": "05/06/2015",
+		"endDate": "19/12/2015",
+		"lastVacationOn": "20/02/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 164,
+		"employee": "Clarke T. Horne",
+		"beginDate": "15/06/2015",
+		"endDate": "27/11/2015",
+		"lastVacationOn": "24/02/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 165,
+		"employee": "Phelan F. Horne",
+		"beginDate": "08/07/2015",
+		"endDate": "20/11/2015",
+		"lastVacationOn": "09/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 166,
+		"employee": "Athena Russo",
+		"beginDate": "22/06/2015",
+		"endDate": "06/01/2016",
+		"lastVacationOn": "16/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 167,
+		"employee": "Ian Finley",
+		"beginDate": "26/06/2015",
+		"endDate": "08/12/2015",
+		"lastVacationOn": "14/05/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 168,
+		"employee": "Ayanna Morse",
+		"beginDate": "09/07/2015",
+		"endDate": "12/11/2015",
+		"lastVacationOn": "22/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 169,
+		"employee": "Maisie Mcclure",
+		"beginDate": "29/06/2015",
+		"endDate": "27/10/2015",
+		"lastVacationOn": "07/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 170,
+		"employee": "Sonya Griffin",
+		"beginDate": "14/06/2015",
+		"endDate": "22/01/2016",
+		"lastVacationOn": "30/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 171,
+		"employee": "Vincent Y. Wise",
+		"beginDate": "09/06/2015",
+		"endDate": "08/01/2016",
+		"lastVacationOn": "26/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 172,
+		"employee": "Aladdin R. Hawkins",
+		"beginDate": "12/07/2015",
+		"endDate": "11/09/2015",
+		"lastVacationOn": "21/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 173,
+		"employee": "Hadassah P. Warner",
+		"beginDate": "09/06/2015",
+		"endDate": "30/09/2015",
+		"lastVacationOn": "20/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 174,
+		"employee": "Imelda Pratt",
+		"beginDate": "16/06/2015",
+		"endDate": "29/11/2015",
+		"lastVacationOn": "20/02/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 175,
+		"employee": "Autumn M. Stone",
+		"beginDate": "03/06/2015",
+		"endDate": "04/01/2016",
+		"lastVacationOn": "26/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 176,
+		"employee": "Jenette Lopez",
+		"beginDate": "11/07/2015",
+		"endDate": "04/09/2015",
+		"lastVacationOn": "24/02/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 177,
+		"employee": "Harding E. Gill",
+		"beginDate": "11/06/2015",
+		"endDate": "17/09/2015",
+		"lastVacationOn": "30/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 178,
+		"employee": "Ainsley Cotton",
+		"beginDate": "04/07/2015",
+		"endDate": "01/09/2015",
+		"lastVacationOn": "14/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 179,
+		"employee": "Bruno J. Parker",
+		"beginDate": "10/06/2015",
+		"endDate": "19/08/2015",
+		"lastVacationOn": "04/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 180,
+		"employee": "Wyatt Chang",
+		"beginDate": "08/07/2015",
+		"endDate": "09/10/2015",
+		"lastVacationOn": "25/06/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 181,
+		"employee": "Imogene Barlow",
+		"beginDate": "03/07/2015",
+		"endDate": "06/09/2015",
+		"lastVacationOn": "25/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 182,
+		"employee": "Beck Chen",
+		"beginDate": "28/06/2015",
+		"endDate": "15/09/2015",
+		"lastVacationOn": "24/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 183,
+		"employee": "Darius C. Mccoy",
+		"beginDate": "17/06/2015",
+		"endDate": "04/12/2015",
+		"lastVacationOn": "17/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 184,
+		"employee": "Theodore B. Huff",
+		"beginDate": "04/07/2015",
+		"endDate": "28/11/2015",
+		"lastVacationOn": "16/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 185,
+		"employee": "Vivien L. Trevino",
+		"beginDate": "13/06/2015",
+		"endDate": "22/08/2015",
+		"lastVacationOn": "14/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 186,
+		"employee": "Maite G. Beck",
+		"beginDate": "08/06/2015",
+		"endDate": "22/08/2015",
+		"lastVacationOn": "05/05/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 187,
+		"employee": "Karina O. Richards",
+		"beginDate": "19/06/2015",
+		"endDate": "29/01/2016",
+		"lastVacationOn": "13/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 188,
+		"employee": "Kenyon Barber",
+		"beginDate": "13/06/2015",
+		"endDate": "09/11/2015",
+		"lastVacationOn": "26/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 189,
+		"employee": "Lois Wheeler",
+		"beginDate": "29/06/2015",
+		"endDate": "07/08/2015",
+		"lastVacationOn": "12/05/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 190,
+		"employee": "Debra J. Powell",
+		"beginDate": "02/07/2015",
+		"endDate": "28/10/2015",
+		"lastVacationOn": "01/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 191,
+		"employee": "Whitney B. Davidson",
+		"beginDate": "07/07/2015",
+		"endDate": "03/10/2015",
+		"lastVacationOn": "20/04/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 192,
+		"employee": "Arden Higgins",
+		"beginDate": "04/06/2015",
+		"endDate": "24/01/2016",
+		"lastVacationOn": "17/02/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 193,
+		"employee": "Katell G. Melton",
+		"beginDate": "26/06/2015",
+		"endDate": "26/01/2016",
+		"lastVacationOn": "15/02/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 194,
+		"employee": "Jerry O. Glover",
+		"beginDate": "04/07/2015",
+		"endDate": "22/11/2015",
+		"lastVacationOn": "14/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 195,
+		"employee": "Isaiah T. Fischer",
+		"beginDate": "09/06/2015",
+		"endDate": "05/01/2016",
+		"lastVacationOn": "04/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 196,
+		"employee": "Tamekah Bray",
+		"beginDate": "26/06/2015",
+		"endDate": "05/12/2015",
+		"lastVacationOn": "28/01/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 197,
+		"employee": "Illana U. Dale",
+		"beginDate": "14/07/2015",
+		"endDate": "21/12/2015",
+		"lastVacationOn": "15/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 198,
+		"employee": "Lucas M. Little",
+		"beginDate": "06/07/2015",
+		"endDate": "22/10/2015",
+		"lastVacationOn": "06/03/2014",
+		"approved": ""
+	},
+	{
+		"caseId": 199,
+		"employee": "Remedios R. Parker",
+		"beginDate": "10/07/2015",
+		"endDate": "09/10/2015",
+		"lastVacationOn": "27/04/2014",
+		"approved": ""
+	}
+]

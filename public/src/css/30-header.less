@@ -1,0 +1,64 @@
+header {
+	font-family: @font-primary;
+	font-weight: 300;
+	font-size: 20px;
+	color: #555;
+	.text-shadow(#000);
+
+	background-color: #292929;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: @header-height -1;
+	z-index: 50;
+	overflow: hidden;
+	border-bottom: 1px solid #222;
+
+	// Ham menu
+	.hmenu {
+		left: 10px;
+		position: absolute;
+		top: 8px;
+		a {
+			display: block;
+			padding: 5px;
+			.icon-bar {
+				background-color: #C8C8C6;
+				display: block;
+				.border-radius(2px);
+				height: 5px;
+				margin: 4px 0;
+				width: 30px;
+			}
+		}
+		@media only screen and (max-width: @responsive-w-800) {
+			left:5px;
+			top: 4px;
+			a {
+				.icon-bar {
+					height: 4px;
+					margin: 3px 0;
+					width: 23px;
+				}
+			}
+		}
+	}
+
+	h1 {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		font-size: 20px;
+		line-height: @header-height;
+		@media only screen and (max-width: @responsive-w-800) {
+			line-height: @header-mobile-height;
+		}
+	}
+
+	@media only screen and (max-width: @responsive-w-800) {
+		height: @header-mobile-height;
+	}
+
+}

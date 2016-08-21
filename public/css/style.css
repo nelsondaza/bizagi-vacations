@@ -1,8 +1,8 @@
 @import url('http://fonts.googleapis.com/css?family=Oswald:400,300,700');
 @import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
-/*
- * A little reset for crossbrowser compat
- */
+/**
+Reset for crossbrowser compat and general styles
+**/
 *,
 *:before,
 *:after {
@@ -10,28 +10,55 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/*
- * Remove default fieldset styles.
- */
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+.hidden {
+  display: none !important;
 }
-/*
- * Allow only vertical resizing of textareas.
- */
-textarea {
-  resize: vertical;
+.invisible {
+  visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+a,
+a:hover,
+a:visited {
+  color: inherit;
 }
 html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
   color: #555156;
   font-size: 16px;
   line-height: normal;
 }
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+body {
+  margin: 0;
+  padding-top: 57px;
+  background-color: #E7E7E6;
+  font-family: 'Oswald', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+body .body-content {
+  width: 100%;
+  height: 100%;
+  display: table;
+  vertical-align: top;
+}
+@media only screen and (max-width: 800px) {
+  body {
+    padding-top: 40px;
+  }
+}
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -45,167 +72,219 @@ html {
 .browserupgrade a {
   color: inherit;
 }
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-/*
- * Hide visually and from screen readers:
- */
-.hidden {
-  display: none !important;
-}
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-.invisible {
-  visibility: hidden;
-}
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-.clearfix:after {
-  clear: both;
-}
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-@media print, (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  /*
-   * Printing Tables:
-   * http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  img {
-    max-width: 100% !important;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-body {
-  padding-top: 57px;
-  background-color: #f1f1f1;
+header {
   font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #555;
+  text-shadow: 1px 1px 3px #000;
+  background-color: #292929;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 57px -1;
+  z-index: 50;
+  overflow: hidden;
+  border-bottom: 1px solid #222;
 }
-body .body-content {
-  width: 98%;
-  max-width: 1200px;
-  margin: 0 auto;
+header .hmenu {
+  left: 10px;
+  position: absolute;
+  top: 8px;
+}
+header .hmenu a {
+  display: block;
+  padding: 5px;
+}
+header .hmenu a .icon-bar {
+  background-color: #C8C8C6;
+  display: block;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  height: 5px;
+  margin: 4px 0;
+  width: 30px;
 }
 @media only screen and (max-width: 800px) {
-  body .body-content {
-    width: 100%;
+  header .hmenu {
+    left: 5px;
+    top: 4px;
+  }
+  header .hmenu a .icon-bar {
+    height: 4px;
+    margin: 3px 0;
+    width: 23px;
+  }
+}
+header h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+  line-height: 57px;
+}
+@media only screen and (max-width: 800px) {
+  header h1 {
+    line-height: 40px;
   }
 }
 @media only screen and (max-width: 800px) {
-  body {
-    padding-top: 174px;
+  header {
+    height: 40px;
   }
 }
-@media only screen and (max-width: 800px) {
-  body.not-front {
-    padding-top: 87px;
+aside.body-aside {
+  display: table-cell;
+  vertical-align: top;
+  width: 180px;
+  height: 100%;
+  background-color: #292929;
+  color: #FFF;
+  font-weight: bold;
+}
+aside.body-aside menu {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+}
+aside.body-aside menu ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+aside.body-aside menu ul.menu li {
+  margin: 0;
+  padding: 3px 7px;
+  display: block;
+  list-style: none;
+  height: 40px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border-top: 1px solid #343434;
+  border-bottom: 1px solid #191919;
+}
+aside.body-aside menu ul.menu li a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+aside.body-aside menu ul.menu li img.avatar {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #444444;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  vertical-align: middle;
+}
+aside.body-aside menu ul.menu li.title {
+  border-top: 1px solid #5E5E5E;
+  border-bottom: 1px solid #000;
+  color: #989898;
+  padding: 3px 12px;
+  background-color: #454545;
+  font-size: 14px;
+  height: 26px;
+  line-height: 16px;
+}
+aside.body-aside menu ul.menu li.active {
+  padding-left: 16px;
+  color: #DDD;
+  background-color: #1D1D1D;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+@media only screen and (min-width: 800px) {
+  aside.body-aside menu ul.menu li:hover:not(.title):not(.active) {
+    background-color: #222;
+    color: #EEE;
   }
+}
+section.body-section {
+  display: table-cell;
+  vertical-align: top;
+  width: auto;
+  height: 100%;
+}
+section.body-section .activity-list .activity {
+  padding: 10px 15px;
+  margin: 8px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  border-color: #b7b7b6;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 1px 1px 3px 0 #b7b7b6;
+  -moz-box-shadow: 1px 1px 3px 0 #b7b7b6;
+  box-shadow: 1px 1px 3px 0 #b7b7b6;
+  height: 107px;
+  background-color: #FFF;
+  float: left;
+  width: 30%;
+  min-width: 300px;
+}
+section.body-section .activity-list .activity .header {
+  color: #C4C4C4;
+  font-size: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: right;
+  height: 16px;
+  line-height: 16px;
+  overflow: hidden;
+  border-bottom: 1px solid #DDD;
+}
+section.body-section .activity-list .activity .header span.case {
+  float: left;
+}
+section.body-section .activity-list .activity h3 {
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+}
+section.body-section .activity-list .activity p {
+  margin: 0;
+  padding: 3px 5px;
+  font-size: 12px;
+  height: 25px;
+  overflow: hidden;
+}
+section.body-section .activity-list .activity .footer {
+  color: #C4C4C4;
+  font-size: 8px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: right;
+  height: 16px;
+  line-height: 16px;
+  overflow: hidden;
+  border-top: 1px dotted #C4C4C4;
+}
+section.body-section .activity-list .activity.pending {
+  border-left: 4px solid #fdb338;
+}
+section.body-section .activity-list .activity.pending .footer {
+  color: #fdb338;
+  border-top-color: #fdb338;
+}
+section.body-section .activity-list .activity.denied {
+  border-left: 4px solid #D95C5C;
+}
+section.body-section .activity-list .activity.denied .footer {
+  color: #D95C5C;
+  border-top-color: #D95C5C;
+}
+section.body-section .activity-list .activity.approved {
+  border-left: 4px solid #89B84C;
+}
+section.body-section .activity-list .activity.approved .footer {
+  color: #89B84C;
+  border-top-color: #89B84C;
 }
