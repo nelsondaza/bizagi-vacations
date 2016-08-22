@@ -1,0 +1,25 @@
+<div class="activity-details">
+	{{#activity}}
+	<div class="activity {{case.approved}}">
+		<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+		<h3>{{process}} - {{activity}}</h3>
+		<p>{{activityId}}</p>
+		<div class="details">
+			<img class="avatar" alt="{{case.employee}}" src="{{case.image}}"> {{case.employee}}
+			<h4>Vacations:</h4>
+			From: {{case.beginDate}} to {{case.endDate}}
+			<br>
+			Total working days: {{case.workingDays}}
+			<br>
+			Last vacations on: {{case.lastVacationOn}}
+		</div>
+		<div class="actions">
+			<button class="ui button pending">Pending</button> <button class="ui button approved">Approve</button> <button class="ui button denied">Deny</button>
+		</div>
+		<div class="footer">{{case.approved}}</div>
+	</div>
+	{{/activity}}
+	{{^activity}}
+	<h3 class="empty">No activity found.</h3>
+	{{/activity}}
+</div>

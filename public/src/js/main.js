@@ -12,51 +12,41 @@ $(function(){
 		responseTime: [500, 750]
 	});
 
+	/**
+	 * Creates a menu with a fake user
+	 */
+	var menu = new Menu({
+		name: faker.name.findName(),
+		image:faker.image.avatar()
+	});
 
-	$(window).on('hashchange', hashchange);
+	var activityList = new ActivityList();
 
-	function hashchange( ){
-		console.debug(window.location.hash);
-		switch(window.location.hash) {
-			case '#all':
-				all();
-				break;
-			case '#approved':
-				approved();
-				break;
-			case '#denied':
-				denied();
-				break;
-			default:
-				pending();
-		}
-	}
+	menu.on('pending',function(){
+			activityList.render('pending', $('section.body-section'));
+		})
+		.on('all',function(){
+			activityList.render('all', $('section.body-section'));
+		})
+		.on('approved',function(){
+			activityList.render('approved', $('section.body-section'));
+		})
+		.on('denied',function(){
+			activityList.render('denied', $('section.body-section'));
+		})
+		.on('logout',function(){
+			document.location.href = '?';
+		})
+		.on('404',function( params ){
+			if( params[0] == 'activity' ) {
+				activityList.renderActivity( params[1], $('section.body-section') );
+			}
+		})
+		.render($('aside.body-aside:first'));
 
-	function selectMenu( hash ) {
-		$('.menu li.active').removeClass('active');
-		$('.menu li a[href="#' + hash + '"]').parent().addClass('active');
-	}
 
-	function pending() {
-		console.debug('pending');
-		selectMenu('pending');
-	}
-
-	function all() {
-		console.debug('all');
-		selectMenu('all');
-	}
-
-	function approved() {
-		console.debug('approved');
-		selectMenu('approved');
-	}
-
-	function denied() {
-		console.debug('denied');
-		selectMenu('denied');
-	}
-
-	hashchange();
-
+	activityList.onSelect(function(activity){
+		document.location.href = '#activity/' + activity;
+	});
 });
+

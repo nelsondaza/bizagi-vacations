@@ -42,8 +42,9 @@ module.exports = function(grunt) {
 				filter: 'isFile',
 				src: [
 					'./jquery/dist/jquery.min.js',
-					'./mustache/mustache.min.js',
-					'./jquery-mockjax/dist/jquery.mockjax.min.js'
+					'./jquery-mockjax/dist/jquery.mockjax.min.js',
+					'./faker/build/build/faker.min.js',
+					'./mustache/mustache.min.js'
 				]
 			}
 		},

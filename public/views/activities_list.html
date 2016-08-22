@@ -1,0 +1,13 @@
+<div class="activity-list">
+	{{#activities}}
+	<div class="activity {{case.approved}}" data-id="{{caseId}}">
+		<div class="header"><span class="case">Case: {{caseId}}</span>{{requestDate}}</div>
+		<h3>{{process}} - {{activity}}</h3>
+		<p>{{activityId}}</p>
+		<div class="footer">{{case.approved}}</div>
+	</div>
+	{{/activities}}
+	{{^activities}}
+		<h3 class="empty">No activities in this categories.</h3>
+	{{/activities}}
+</div>

@@ -20,6 +20,7 @@
     "express": "^4.14.0"
   },
   "devDependencies": {
+    "faker": "^3.1.0",
     "grunt": "^1.0.1",
     "grunt-concurrent": "^2.3.1",
     "grunt-contrib-copy": "^1.0.0",

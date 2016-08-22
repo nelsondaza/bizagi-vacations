@@ -1,0 +1,61 @@
+.ui {
+
+	&.button {
+		padding: 0 15px;
+		margin: 6px 4px;
+		min-width: 80px;
+		border-radius: 3px;
+		font-size: 12px;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration:none;
+		border: none;
+		outline: none;
+
+		font-weight: 500;
+		display: inline-block;
+		height: 30px;
+		line-height: 30px;
+		cursor: pointer;
+
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+
+		vertical-align: middle;
+		white-space: nowrap;
+
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+
+		user-select: none;
+		position: relative;
+		overflow: hidden;
+
+		background-color: #EEE;
+		color: rgba(0,0,0,.87);
+
+		&.approved,
+		&.ok {
+			color: #FFF;
+			background-color: @input-color-ok;
+		}
+		&.denied,
+		&.error {
+			color: #FFF;
+			background-color: @input-color-error;
+		}
+		&.pending,
+		&.wait {
+			color: #FFF;
+			background-color: @input-color-wait;
+		}
+		&.blue,
+		&.info {
+			color: #FFF;
+			background-color: @input-color-info;
+		}
+	}
+
+
+}

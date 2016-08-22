@@ -20,11 +20,14 @@ module.exports = {
 	beforeEach: function(client) {
 		this.browser.reset();
 	},
-	'Load inbox' : function(client) {
+	'Load Home' : function(client) {
 
-		client.assert.visible('body');
-		client.assert.title('Bizagi - Vacations');
-		
+		client.assert.visible('body')
+			.assert.title('Bizagi - Vacations')
+			.pause(200)
+			.assert.visible('aside.body-aside')
+			.assert.visible('ul.menu');
+
 		/*
 		client
 			.url("http://www.google.com")
